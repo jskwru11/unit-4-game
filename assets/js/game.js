@@ -12,7 +12,7 @@ $(document).ready(() => {
             counterAttack: 12,
             multiplier: 4
         },
-        sidious: {
+        darth: {
             health: 150,
             attack: 17,
             counterAttack: 10,
@@ -43,7 +43,13 @@ $(document).ready(() => {
             $('.btn').show();
         });
         $('.btn').on('click', function () {
-            console.log($('.opponent'));
+
+            players[$('.selected').attr('id')].health -= players[$('.opponent').attr('id')].counterAttack;
+            players[$('.opponent').attr('id')].health -= players[$('.selected').attr('id')].attack;
+            console.log(players[$('.selected').attr('id')].health);
+            console.log(players[$('.opponent').attr('id')].health);
+            console.log($('.selected').attr('id'));
+            console.log($('.opponent').attr('id'));
             
         });
     });
