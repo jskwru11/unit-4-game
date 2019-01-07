@@ -1,0 +1,44 @@
+
+body { 
+    background: url(../images/starWarsBGImage.jpg) ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 62.5%;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .header {
+      background: #FC6C04;
+  }
+
+
+  #header-title {
+      color: #0F38EF;
+      font-size: 6rem;
+  }
+
+  .wrapper {
+    max-width: 15rem;
+    max-height: 15rem; 
+    border: .2rem solid pink; 
+    overflow: hidden;
+    margin-top: 3rem;
+    
+  }
+
+  .characters {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .first {
+      margin-left: 2rem;
+  }
+
+  .btn {
+      margin: 3rem 0 0 3rem;
+  }
